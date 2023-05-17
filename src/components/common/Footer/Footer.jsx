@@ -1,7 +1,6 @@
 import { Box, Card, CardMedia, Paper, Typography } from '@mui/material'
 import { styled } from '@mui/material/styles'
 import { colorBlack, colorWhite } from '../../UI/variablesStyle'
-import TwitterIcon from '@mui/icons-material/Twitter'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import { Link } from 'react-router-dom'
@@ -79,10 +78,6 @@ const BoxMedium = styled(Box)(({ theme }) => ({
 function Footer() {
   const social = [
     {
-      name: 'Twitter',
-      icon: <TwitterIcon />
-    },
-    {
       name: 'Linkedin',
       icon: <LinkedInIcon />
     },
@@ -93,9 +88,8 @@ function Footer() {
   ]
 
   const links = [
-    'https://twitter.com/stefifm',
-    'https://www.linkedin.com/in/stefania-bruera',
-    'https://github.com/stefifm'
+    'https://www.linkedin.com/in/fermin-kloster/',
+    'https://github.com/DferminKloster'
   ]
   return (
     <>
@@ -121,7 +115,7 @@ function Footer() {
           />
         </BoxMedium>
         <BoxRight>
-          <FooterText variant='p'>© Stefania Verónica Bruera</FooterText>
+          <FooterText variant='p'>© Diego Fermin Kloster</FooterText>
         </BoxRight>
       </FooterBox>
     </>
